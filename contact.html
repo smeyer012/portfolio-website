@@ -11,20 +11,21 @@
     <header>
       <img src="http://via.placeholder.com/200x70" alt="logo">
       <nav>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
+        <ul role="menubar">
+          <li role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
           </li>
-          <li>
-            <a href="about.html">About</a>
+          <li role="presentation">
+            <a href="about.html" role="menuitem">About</a>
           </li>
-          <li>
-            <a href="#">Contact</a>
+          <li role="presentation">
+            <a href="#" role="menuitem">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
+
       <div>
         CareerFoundry GmbH<br>
         Köpenicker Str. 126<br>
@@ -34,14 +35,29 @@
         Tel <a href="tel:+491234567">+49 1234567</a><br>
         Skype <a href="skype:hello.careerfoundry"> hello.careerfoundry</a><br>
         <a href="mailto:office@careerfoundry.com">office@careerfoundry.com</a>
-      </div><a href="mailto:office@careerfoundry.com">Contact me</a>
+      </div>
+
+      <form action="" method="post" id="contact-form">
+        <label class="standard-label" for="contact-email">E-mail: </label>
+        <input type="email" id="contact-email" required>
+
+        <label class="standard-label" for="contact-phone">Telephone: </label>
+        <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+        <label class="standard-label" for="contact-msg">Message: </label>
+        <textarea id="contact-msg" maxlength="240" required></textarea>
+
+        <input type="submit" value="Send message">
+      </form>
+
       <a href="mailto:office@careerfoundry.com">Contact me</a>
+
     </main>
     <footer>
       <p>Find me on</p>
-      <ul>
-        <li>
-          <a href="https://github.com" target="_blank">
+      <ul role="menubar">
+        <li role="presentation">
+          <a href="https://github.com" target="_blank" role="menuitem">
             <svg width="30px" height="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
               <g>
                 <rect x="0" y="0" style="fill:#50ABF1;" width="455.731" height="455.731" />
@@ -56,8 +72,8 @@
             </svg>
           </a>
         </li>
-        <li>
-          <a href="https://twitter.com" target="_blank">
+        <li role="presentation">
+          <a href="https://twitter.com" target="_blank" role="menuitem">
             <svg width="30px" height="30px" enable-background="new 0 0 48 48" id="Layer_1" version="1.1" viewBox="0 0 48 48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <circle cx="24" cy="24" fill="#1CB7EB" r="24"/>
               <g>
@@ -68,8 +84,8 @@
             </svg>
           </a>
         </li>
-        <li>
-          <a href="https://linkedin.com" target="_blank">
+        <li role="presentation">
+          <a href="https://linkedin.com" target="_blank" role="menuitem">
             <svg width="30px" height="30px" enable-background="new 0 0 32 32" id="Layer_1" version="1.0" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g>
                 <circle clip-rule="evenodd" cx="16" cy="16" fill="#007BB5" fill-rule="evenodd" r="16"/>
@@ -83,6 +99,7 @@
           </a>
         </li>
       </ul>
-    </footer
+    </footer>
+    <script src="js/tota11y.min.js"></script>
   </body>
 </html>
