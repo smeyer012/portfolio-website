@@ -1,3 +1,13 @@
+/*
+Colors used
+
+Text Color (Dark Gray): #2b2b2b;
+Primary Color (Purple): #357b70;
+Secondary Color (Orange): #e0b354;
+ */
+
 body {
-  background: lightgray;
+  background: #bbbbbb;
+  color: #2b2b2b;
+
 }
