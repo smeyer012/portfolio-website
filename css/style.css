@@ -66,3 +66,7 @@ button:hover, button:focus {
   background-color: #e0b354;
   color: #2b2b2b;
 }
+
+.navigation-list_item--active {
+  text-decoration: none;
+}
