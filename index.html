@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <!--replace placeholder below -->
-      <img src="https://via.placeholder.com/200x70" alt="logo">
-      <nav>
+    <header class="page-header">
+      <img src="img/frdd-logo.svg" alt="logo" class="logo page-header__item">
+      <nav class="main-navigation page-header__item">
         <ul role="menubar" aria-label="Main" class="navigation-list">
           <li role="presentation">
             <a href="index.html" role="menuitem" class="navigation-list_item navigation-list_item--active">Home</a>
@@ -22,16 +21,16 @@
             <a href="about.html" role="menuitem" class="navigation-list_item">About</a>
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list_item"Contact</a>
+             <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
           </li>
       </nav>
     </header>
     <main>
-      <div>
-        <!--replace placeholder below -->
-        <img src="https://via.placeholder.com/150x150" alt="A photograph of me" >
-      </div>
-      <div class="page_content">
+      <div class="profile">
+        <img src="img/headshot.jpg" alt="A photograph of me" class="profile__portrait">
         <h1>Hello World!</h1>
         <p>My name is Stephanie Meyer. I am a <span>web </span> developer from Austin, TX.</p>
         <a href="#">Show me some code</a>
@@ -40,9 +39,15 @@
         <button class="button_secondary">Secondary Button</button>
       </div>
     </main>
-    <footer>
+    <footer class="page-footer">
       <p>Find me on</p>
-      <ul role="menubar" aria-label="Social links">
+      <div class="social-media">
+        <img src="https://via.placeholder.com/30x30" alt="GitHub">
+        <img src="https://via.placeholder.com/30x30" alt="Twitter">
+        <img src="https://via.placeholder.com/30x30" alt="LinkedIn">
+      </div>
+      <!--
+      <ul role="menubar" aria-label="Social links" style="order: 1">
         <li role="presentation">
           <a href="https://github.com" target="_blank" role="menuitem">
             <svg width="30px" height="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
@@ -86,6 +91,7 @@
           </a>
         </li>
       </ul>
+      -->
     </footer>
     <script src="js/tota11y.min.js"></script>
   </body>
