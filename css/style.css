@@ -29,3 +29,19 @@ h3 {
   font-size: 18px;
   font-weight: 700;
 }
+
+a {
+  color: #357b70;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #05676e;
+}
+
+a:active {
+  color: #489c79;
+}
