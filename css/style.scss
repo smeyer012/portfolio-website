@@ -1,3 +1,4 @@
+/**** Variables ****/
 :root {
   --primary-color: #357b70;
   --secondary-color: #e0b354;
@@ -5,6 +6,8 @@
   --header-weight: 700;
   --base-font-size: 16px;
 }
+
+/**** General styles & typography ****/
 
 body {
   color: var(--dark-grey);
@@ -112,7 +115,7 @@ tbody tr {
 
 }
 
-/**** header ****/
+/**** Header ****/
 
 .page-header {
   display: flex;
@@ -146,13 +149,13 @@ tbody tr {
 }
 
 
-/**** main ****/
+/**** Main ****/
 
 main {
    padding: 50px;
 }
 
-/**** index.html ****/
+/**** Home - index.html ****/
 
 .profile {
   max-width: 700px;
@@ -171,7 +174,7 @@ main {
 }
 
 
-/**** about.html ****/
+/**** About - about.html ****/
 
 #rabbitsvg {
   float: right;
@@ -207,7 +210,7 @@ main {
   }
 }
 
-/**** work.html ****/
+/**** Portfolio - work.html ****/
 
 /* start grid fallback */
 .grid__item {
@@ -277,7 +280,7 @@ main {
 
 }
 
-/**** footer ****/
+/**** Footer ****/
 
 .page-footer {
   clear: both;
