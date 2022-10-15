@@ -52,7 +52,7 @@ a {
   }
 }
 
-button, a.button {
+button, a.button, input.button {
   border: none;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -77,13 +77,11 @@ table {
   border-spacing: 0;
   border: 1px solid grey;
   width: 100%;
+  margin: 30px 0;
 }
 
 thead {
   background: #e0e0e0;
-}
-
-tr {
 }
 
 td {
@@ -153,19 +151,16 @@ tbody tr {
 
 main {
    padding: 50px;
+   max-width: 700px;
+   margin: 0 auto;
 }
 
 /**** Home - index.html ****/
 
-.profile {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
 .profile__portrait {
   float: left;
   width: 250px;
-  margin-right: 40px;
+  margin: 0 40px 20px 0;
   border-radius: 50%;
 }
 
@@ -176,12 +171,21 @@ main {
 
 /**** Portfolio - work.html ****/
 
+.portfolio {
+  max-width: 1000px;
+}
+
 /* start grid fallback */
 .grid__item {
   background-color: lightgray;
   display: inline-block;
   width: 100%;
   margin: 10px 0;
+  padding: 20px;
+  h2 {
+    font-size: 20px;
+    margin: 0 0 20px;
+  }
 }
 /* end grid fallback */
 
@@ -244,6 +248,31 @@ main {
 
 }
 
+
+/**** Contact - contact.html ****/
+
+.contactpage {
+  text-align: center;
+}
+
+form {
+  padding: 70px 0 0;
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid lightgray;
+}
+
+
 /**** Footer ****/
 
 .page-footer {
@@ -251,4 +280,21 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
+  p {
+    color: var(--primary-color);
+  }
+}
+
+.socialinks {
+  padding: 0;
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+    a {
+      border: 0;
+      transition: opacity 1s;
+      &:hover { opacity: 0.6; }
+    }
+  }
 }
