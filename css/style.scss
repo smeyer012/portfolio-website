@@ -174,42 +174,6 @@ main {
 }
 
 
-/**** About - about.html ****/
-
-#rabbitsvg {
-  float: right;
-  margin: 0 0 50px 20px;
-  animation: 3s carrot-move infinite alternate linear;
-}
-
-@keyframes carrot-move {
-  0% {
-    transform: translate(0, 20px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-#carrotgreen {
-  animation: 5s carrot-green infinite alternate linear;
-}
-#path48 {
-
-}
-
-@keyframes carrot-green {
-  0% {
-    fill: #9fd126;
-  }
-  60% {
-    fill: #fff;
-  }
-  100% {
-    fill: #9fd126;
-  }
-}
-
 /**** Portfolio - work.html ****/
 
 /* start grid fallback */
