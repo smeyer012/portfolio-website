@@ -1,19 +1,17 @@
 /**** Variables ****/
-:root {
-  --primary-color: #357b70;
-  --secondary-color: #e0b354;
-  --dark-grey: #2b2b2b;
-  --header-weight: 700;
-  --base-font-size: 16px;
-}
+$primary-color: #357b70;
+$secondary-color: #e0b354;
+$dark-grey: #2b2b2b;
+$header-weight: 700;
+$base-font-size: 16px;
 
-/**** General styles & typography ****/
+/**** General Styles & Typography ****/
 
 body {
-  color: var(--dark-grey);
+  color: $dark-grey;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: var(--base-font-size);
+  font-size: $base-font-size;
   line-height: 1.6;
 }
 
@@ -23,21 +21,21 @@ body {
 
 h1 {
   font-size: 22px;
-  font-weight: var(--header-weight);
+  font-weight: $header-weight;
 }
 
 h2 {
   font-size: 18px;
-  font-weight: var(--header-weight);
+  font-weight: $header-weight;
 }
 
 h3 {
-  font-size: var(--base-font-size);
-  font-weight: var(--header-weight);
+  font-size: $base-font-size;
+  font-weight: $header-weight;
 }
 
 a {
-  color: var(--primary-color);
+  color: $primary-color;
   transition: border 0.74s;
   text-decoration: none;
   border-bottom: 1px solid rgba(53, 123, 113, 1);
@@ -56,7 +54,7 @@ button, a.button, input.button {
   border: none;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   padding: 10px;
   font-family: inherit;
   color: white;
@@ -69,8 +67,8 @@ button, a.button, input.button {
 }
 
 .button_secondary {
-  background-color: var(--secondary-color);
-  color: var(--dark-grey);
+  background-color: $secondary-color;
+  color: $dark-grey;
 }
 
 table {
@@ -281,7 +279,7 @@ input, textarea {
   flex-direction: column;
   text-align: center;
   p {
-    color: var(--primary-color);
+    color: $primary-color;
   }
 }
 
